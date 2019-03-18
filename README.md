@@ -1,2 +1,2 @@
-# a-to-do-list
+# A to do list.
 FOR PEOPLE WHO LIKE TO DO LISTS (IT CAN BE USED FOR OTHER STUFF)
