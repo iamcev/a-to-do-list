@@ -10,10 +10,14 @@
         height:500px!important;
         overflow:hidden;
         font-family:monospace;
+        color:black;
       }
       #main-text {
         width:80%;
         height:80%;
+        background:inherit;
+        outline-color:#ff9800;
+        color:inherit;
       }
       button {
         border:none;
@@ -37,7 +41,7 @@
         display:none;
         animation:from-right 300ms ease;
         z-index:999999999;
-        background:white;
+        background:inherit;
         padding:16px;
       }
       @keyframes from-right {
@@ -63,11 +67,11 @@
     <textarea id="main-text"></textarea>
     <button id="themes-btn">...</button>
     <div id="themes">
-      <button style="width:100%;box-shadow:0px 0px 0px 0px;background:black;color:white;">Dark</button><br><br>
-      <button style="width:100%;box-shadow:0px 0px 0px 0px;background:white;color:black;">Light</button>
+      <button style="width:100%;box-shadow:0px 0px 0px 0px;background:black;color:white;" id="dark">Dark</button><br><br>
+      <button style="width:100%;box-shadow:0px 0px 0px 0px;background:white;color:#333;" id="light">Light</button>
       <div class="back"></div>
     </div>
-    <p><!--Made with Electron.--> By Craftingexpert1.</p>
+    <p>Made with Electron. By Craftingexpert1.</p>
     <script src="index.js"></script>
   </body>
 </html>
