@@ -6,3 +6,4 @@ document.querySelector('.back').addEventListener('click',()=>{document.querySele
 document.querySelector('#light').addEventListener('click',()=>{document.body.style.background="white";document.body.style.color="black";})
 document.querySelector('#dark').addEventListener('click',()=>{document.body.style.background="#333";document.body.style.color="white";})
 document.querySelector('#red').addEventListener('click',()=>{document.body.style.background="red";document.body.style.color="white";})
+document.querySelector('#blue').addEventListener('click',()=>{document.body.style.background="blue";document.body.style.color="white";})
