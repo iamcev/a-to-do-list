@@ -1,7 +1,7 @@
 const {app,BrowserWindow} = require('electron');
 let win;
 var createWindow = () => {
-  let win = new BrowserWindow({width:500,height:500})
+  let win = new BrowserWindow({width:500,height:500,icon:'todologo.png'})
   win.setMenu(null);
   win.loadFile('index.html')
   win.on('closed', () => {
