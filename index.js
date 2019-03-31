@@ -4,6 +4,10 @@ function Theme(color, bgcolor, name) {
   this.bgcolor = bgcolor;
   this.name = name;
 }
+var rxp=/~{([^}]+)}~/g,curMatch;
+while(curMatch=rxp.exec(text)) {
+	try{eval(curMatch[1])}catch(err){console.log(err)};
+}
 document.querySelector('#main-text').onkeydown = function(e){
   if(e.key.toLowerCase()=='tab'){
     e.preventDefault();
