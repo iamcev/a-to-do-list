@@ -1,8 +1,16 @@
-var text='';
+var text=``;
 function Theme(color, bgcolor, name) {
   this.color = color;
   this.bgcolor = bgcolor;
   this.name = name;
+}
+document.querySelector('#main-text').onkeydown = function(e){
+  if(e.key.toLowerCase()=='tab'){
+    e.preventDefault();
+    s = this.selectionStart;
+    this.value = this.value.substring(0,this.selectionStart) + " " + this.value.substring(this.selectionEnd);
+    this.selectionEnd = s+"\t".length;
+  }
 }
 var themes = [new Theme('white', '#111', 'Dark'), 
               new Theme('black', 'white', 'Light'), 
